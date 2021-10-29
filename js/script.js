@@ -21,8 +21,10 @@
       
       // And the hours
       const hour = now.getHours();
-      const hourDegrees = ((mins / 12) * 360) + 90;
+      const hourDegrees = ((hour / 12) * 360) + 90;
       hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+      hourHand.style.width = "35%";
+      hourHand.style.right = "50%";
     }
 
       setInterval(setDate, 1000);
